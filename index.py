@@ -38,7 +38,9 @@
 # b = int(input("enter second number; "))
 # print(a >= b)
 # if(a >= b):
-# print("well done")  SPACE after if and before print called indentation
+#   print("well done")
+# # 
+# #   SPACE after if and before print called indentation
 # elif(a<=b):
 #     print("try again")
 
@@ -144,5 +146,118 @@
 # tup =(2 ,4, 6, 7 , 8 , 4)
 # print(tup.index(4))
 # print(tup.count(4))
+# ...................................
+# FUNCTION IN PYTHON
 
-print("Hello")
+
+
+# I/O FUCTIONS
+# f = open("python.py", "r")
+# data = f.read()
+# print(data)
+# f.close
+    
+# ............................................................................
+# OOPS IN PYTHON
+
+# class Student:
+#     name = "danish"
+
+# s1 = Student()
+# print(s1.name)
+
+# s2 = Student()
+# print (s2.name)
+
+# class Student:
+    
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+#         print("adding new value in database")
+
+
+# s1 = Student("daninsh", 73)
+# print(s1.name,s1.marks)
+
+# s2 = Student("ali", 67)
+# print(s2.name, s2.marks)
+
+
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks =marks
+
+#     def get_avg(self):
+#         sum = 0
+#         for val in self.marks:
+#             sum += val
+#         print("hi ", self.name, "your avg score is:", sum/3)
+
+# s1 = Student("afaq latif ", [45, 65, 12] )
+# s1.get_avg()
+
+# @staticmethod
+
+
+
+# a = int (34)
+# b = int (23)
+# sum = a + b
+# divide = a / b
+# subtraction = a - b
+# multiply = a * b
+# modulo = a % b
+# exponential = a ** b
+
+# print(sum)
+# print(divide)
+# print(subtraction)
+# print(multiply)
+# print(exponential)
+# print(modulo)
+
+
+
+
+# def sum(num1, num2):
+#     print(num1 + num2)
+    
+# def sub(num1, num2):
+#     print(num1 - num2)
+    
+# def multiply(num1, num2):
+#     print(num1 * num2)
+    
+# def divide(num1, num2):
+#     print(num1 / num2)
+
+# def operator(operator):
+#     num1: int = int(input("Enter first value: "))
+#     num2: int = int(input("Enter second value: "))
+    
+#     if operator == "sum":
+#         sum(num1, num2)
+#     elif operator == "sub":
+#         sub(num1, num2)
+#     elif operator == "multiply":
+#         multiply(num1, num2)
+#     elif operator == "divide":
+#         divide(num1, num2)
+
+# operation = input("Which operation you want to do 'sum, sub, multiply, divide': ")
+
+# operator(operation)
+
+
+# text = "air\tuniversity"
+# center_text = text.expandtabs(10)
+# print(center_text)
+# print(text.translate)
+
+
+text = "hello\tworld"
+expanded_text = text.expandtabs(4)
+print(expanded_text)
+print(text.)
