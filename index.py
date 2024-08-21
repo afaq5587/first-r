@@ -169,6 +169,47 @@
 # s2 = Student()
 # print (s2.name)
 
+# -------------==========------====================================================
+
+# DICTIONAY  
+
+key = Union [int , str]
+value = Union [int , str, list, tuple, set, dict,]
+
+data : dict[str , str] = {"fname" : "ali",
+                          "name" : "danish",
+                          "marks" : "hassan"
+                          }
+print(data["name"])
+
+print(id("name"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # class Student:
     
 #     def __init__(self, name, marks):
@@ -182,6 +223,7 @@
 
 # s2 = Student("ali", 67)
 # print(s2.name, s2.marks)
+
 
 
 # class Student:
@@ -257,7 +299,34 @@
 # print(text.translate)
 
 
-text = "hello\tworld"
-expanded_text = text.expandtabs(4)
-print(expanded_text)
-print(text.)
+# text = "hello\tworld"
+# expanded_text = text.expandtabs(4)
+# print(expanded_text)
+# print(text)
+                       
+                       
+# name : str = input("Enter your name : ")
+# percent = int(input("Enter your marks percentage : "))
+
+
+# if percent < 30:
+#     grade = "fail"
+# elif 30 <= percent < 45:
+#     grade = "E"
+# elif 45 <= percent < 55:
+#     grade = "D"
+# elif 55 <= percent < 65:
+#     grade = "C"
+# elif 65 <= percent < 75:
+#     grade = "B"
+# elif 75 <= percent <= 100:
+#     grade = "A"
+# else:
+#     grade = "Invalid percentage"
+                     
+                             
+# print(f"Dear {name} your grade is {grade} keep it up : ")
+
+#---------------------------- ___________________________________________________________________________________________________________---
+
+
