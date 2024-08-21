@@ -242,7 +242,7 @@ print(id("name"))
 
 # @staticmethod
 
-
+# -============================================ =================================================
 
 # a = int (34)
 # b = int (23)
@@ -291,7 +291,7 @@ print(id("name"))
 # operation = input("Which operation you want to do 'sum, sub, multiply, divide': ")
 
 # operator(operation)
-
+# ================================================================================================================  
 
 # text = "air\tuniversity"
 # center_text = text.expandtabs(10)
@@ -303,8 +303,8 @@ print(id("name"))
 # expanded_text = text.expandtabs(4)
 # print(expanded_text)
 # print(text)
-                       
-                       
+ 
+# ================================================================================================================                       
 # name : str = input("Enter your name : ")
 # percent = int(input("Enter your marks percentage : "))
 

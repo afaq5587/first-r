@@ -33,12 +33,12 @@
 
 # operator(operation)      
 
-
+# ==================================================================================
 # text = "hello"
 # centered_text = text.center(10 , "*")
 # print(centered_text)
 
-
+# ===========================
 
 # text = "hello"
 # centered_text = text.center(25, "q")
@@ -52,6 +52,7 @@
 # encoded_text = text.encode("utf-8")
 # print(encoded_text)  # Output: b'hello')
 
+# ==========================================================================================
 
 # from typing import Union
 # pertype =Union[float,int]
@@ -90,7 +91,7 @@
 
 # print(new)
 
-
+# ================================================================================
 
 # from typing import Union
 # percenttype = Union[float , int]
@@ -124,34 +125,57 @@
 # function =(list(zip(names, percentage, grades)))
 # print(function)
 
-user_name : str = input("Enter your user name: ")
-password : str = input("Enter your password:  ")
+# user_name : str = input("Enter your user name: ")
+# password : str = input("Enter your password:  ")
 
+# =================================================================================================
 
-if user_name == "admin" and password == "admin":
-    print("otp sent to you")
-    otp : str = input("Enter otp:   ")
+# if user_name == "admin" and password == "admin":
+#     print("otp sent to you")
+#     otp : str = input("Enter otp:   ")
     
-    if otp == "123" :
-        print("welcome to our webside")
+#     if otp == "123" :
+#         print("welcome to our webside")
         
-else:
-    print("nvalid user_name or password")
+# else:
+#     print("nvalid user_name or password")
 
 
+# ===================================================================================================
+# sub1  = float(input("Enter your physics marks:  "))
+# sub2  = float(input("Enter your math marks:  "))
+#chemistry  = float(input("Enter your urdu marks:  "))
 
+# total_marks = sub1 + sub2 +chechemistry
+# total_percentage = total_marks * 100 / 300
 
+# print(f"Total marks are", total_marks) 
+# print(f"Total percentage is", total_percentage)
+# print("congrats")
+# ===========================================================
 
+name = input("Enter your name: ")
+physics = float(input("Enter your physics marks: "))
+math = float(input("Enter your math marks: "))
+chemistry = float(input("Enter your chemistry marks: "))
 
+students_list: list[dict] = []
 
+student = {
+    "name": name,
+    "math": math,
+    "physics": physics,
+    "chemistry":chemistry
+}
 
+students_list.append(student)
+print(students_list)
+# total_marks = sub1 + sub2 +chechemistry
+# total_percentage = total_marks * 100 / 300
 
-
-
-
-
-
-
+# print(f"Total marks are", total_marks) 
+# print(f"Total percentage is", total_percentage)
+print("congrats")
 
 
 
