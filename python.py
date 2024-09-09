@@ -170,19 +170,61 @@ student = {
 
 students_list.append(student)
 print(students_list)
-# total_marks = sub1 + sub2 +chechemistry
-# total_percentage = total_marks * 100 / 300
+total_marks = physics + math + chemistry
+total_percentage = total_marks * 100 // 300
+total_percentage : int
+if  total_percentage > 85  and total_percentage <=100 :
+    grade =(f"A+ \n exelent work")
+elif total_percentage > 65  and total_percentage <=85:
+    grade =(f"A \n exelent work")
+elif total_percentage > 55  and total_percentage <=65:
+    grade =(f"B \n exelent work")
+elif total_percentage > 45  and total_percentage  <= 55:
+    grade =(f"C \n exelent work")
+else:
+    grade =(f"fail \n you tried your best but you can do better")
+    
+print(f"Total marks are", total_marks) 
+print(f"Total percentage is", total_percentage)
+print(f"Your grade is {grade}")
 
-# print(f"Total marks are", total_marks) 
-# print(f"Total percentage is", total_percentage)
-print("congrats")
+
+# ============================================================================================================
+
+# favorite_game = {
+#     "ali" : "cricket",
+#     "danish": "hockey",
+#     "aslam" : "tenis"
+# }
+
+# game = favorite_game["ali"].title()
+# print(f"ali favorite game is {game}")
+
+# Input1 = str = input("Enter your name")
+
+# favorite_game = {
+#     "ali" : "cricket",
+#     "danish": "hockey",
+#     "aslam" : "tenis"
+# }
+# if Input1 == "ali":
+#     print(f"{Input1} your favorite game is {favorite_game[Input1]}")
+# elif Input1 == "danish":
+#         print(f"{Input1} your favorite game is {favorite_game[Input1]}")
+# elif Input1 == "aslam":
+#         print(f"{Input1} your favorite game is {favorite_game[Input1]}")
+# else:
+#     print("invalid name")
+
+# game = favorite_game["ali"].title()
+# print(f"ali favorite game is {game}")
 
 
 
+# import sys
 
+# print("afaq")
+# print("laksd")
 
-
-
-
-
+# print(sys.argv)
 

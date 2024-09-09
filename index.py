@@ -173,16 +173,16 @@
 
 # DICTIONAY  
 
-key = Union [int , str]
-value = Union [int , str, list, tuple, set, dict,]
+# key = Union [int , str]
+# value = Union [int , str, list, tuple, set, dict,]
 
-data : dict[str , str] = {"fname" : "ali",
-                          "name" : "danish",
-                          "marks" : "hassan"
-                          }
-print(data["name"])
+# data : dict[str , str] = {"fname" : "ali",
+#                           "name" : "danish",
+#                           "marks" : "hassan"
+#                           }
+# print(data["name"])
 
-print(id("name"))
+# print(id("name"))
 
 
 
@@ -330,3 +330,238 @@ print(id("name"))
 #---------------------------- ___________________________________________________________________________________________________________---
 
 
+# a : int = 45
+# b : int = 23
+
+# a , b = b , a
+# print(a , b)
+
+
+
+
+
+# numbers :list[str] = ["45", "23" , "67" , "89", "12"]
+# print(numbers[0:4:3])
+
+# no :list[str] = [1,2,3,4,5,6,7,8,9,10], [3,5,7,9,11,13,15,17,19,21]
+# print(no[::-1])
+
+# students : list[str] = [[[["ali", "danish"], [ "abnd", "dfj"]],["12","56"],["ddfggh","por"]],["ip","eyiu"]]
+# print(students[0][2])
+
+
+
+
+# ==================================================================================================================
+# list 
+# marks :list[int] = [23, 44, 45, 5, 2, 5,]
+# print(max(marks))
+# print(min(marks))
+# print(sum(marks))
+# for mark in marks:
+#     print(mark)
+
+# numbers = list(range(1,8))
+# print(numbers)
+# for i in range(23, 98):
+#     print(i)
+# ==================================================================================================================
+# LIST COMPREHENSION...
+# a = [i ** 3 for i in range (1 , 10)]
+# print(f"cube of value from 1 to 10 is : {a}")
+# a = 2 ** 3
+# requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+# for requested_topping in requested_toppings:
+#     print(f"Adding {requested_topping}.")
+# print("\nFinished making your pizza!")
+
+
+# user_0 = {
+#     'username': 'efermi',
+#     'first': 'enrico',
+#     'last': 'fermi',
+#     }
+# user_1 = user_0.get('fname' , 'unknown')
+# print(user_0)
+# for key,value in user_0.items():
+#     print(key, value)
+
+# =======================================================================
+# l1 :list[str] = [1,2,3,4,5,6]
+
+# for l in l1:
+#     print(l)
+
+# l2 : str = "pakistan"
+# for l3 in l2:
+#     print(f"characters : {l3}")
+# import sys
+# a : dict[str, str] = {"name" : "afaq" , "school" : "high public"}
+# for k in a:
+#     print(f"keys are {k} and values are {a[k]}")
+
+# ======================================================================================
+# INPUT FUNCTION (SYS.ARGV)
+# import sys
+
+# print("abnsndhddh")
+# print("jakakak")
+
+# print(sys.argv)
+
+# ask : str = input("Did you want to eat pizza:  ")
+
+# index : int = 0
+# while index <= 5:
+#     if ask == "yes":
+#         print(f"your pizza is getting ready plz pay for it")
+#     index += 1
+#     if index <= 5:
+#         break
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# squares : list[int] = [x**2 for x in range(1,50)]
+# print(squares)
+
+# msg :list = ["ali", "danish", "aslam", "evi"]
+
+# for message in msg:
+#     print(f"hi {message.title()} , you're invited in our party!.")
+    
+
+
+# coordinates : tuple[int,int] = (10, 20, 15)
+# print(coordinates)  # Output: (10, 20)
+
+# n:int = int(input("Enter a number: "))
+
+# for i in range(1, 11):
+#     for n in range(1, 11):
+#         print(f"{i} x {n} = {i * n}")
+    
+    
+    # print(f"{n} x {i} = {i * n}")
+
+
+
+# for i in range(2, 11):
+#     for n in range(1, 11):
+#         print(f"{i} x {n} = {i * n}")
+#     print("next table")
+
+# data : dict = {
+#     'name' : 'saad',
+#     'age' : '19',
+#     'city' : 'kahuta'
+    
+# }
+# for i in data:
+#     print(f"His {i} is {data[i]}")
+    
+# for key,value in data.items():
+#     # print(f"{key}: {value}")
+#     print(key)
+#     print(value)
+
+ # Make 30 green aliens.
+# aliens = []
+# for alien_number in range (30):
+#    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#    aliens.append(new_alien)
+# for alien in aliens[:3]:
+#    if alien['color'] == 'green':
+#        alien['color'] = 'yellow'
+#        alien['speed'] = 'medium'
+#        alien['points'] = 10
+#  # Show the first 5 aliens.
+# for alien in aliens[:5]:
+#    print(alien)
+# print("...")
+
+
+# prompt = "\nDid you want to order pizza:"
+# prompt += "\nEnter 'stop' if there is enough pizzas for you. "
+# message : int | str = ""
+# while message != 'stop':
+#    message = input(prompt)
+#    print(message)
+# FUNCTIONS
+
+
+# def myfunction(num1: int , num2 : int):
+#     return (num1 , num2)   
+# print(myfunction(67 , 78))
+
+# LAMBDA AND MAP AND FILTER
+
+# data : list[int] = [1,2,3,4,5,6,7,8,9]
+# data = list(filter(lambda x:x%2==0 ,data))
+
+# print(data)
+
+# def addition(first_number:int, second_number:int)->int:
+#     result : int = first_number + second_number
+#     return result
+
+
+# print(addition(5, 8)) # Output: 13
+# # Can also do like this
+# get_sum : int = addition(5,8)
+# print(get_sum) 
+
+data : list = [
+    {
+        "name" : "ali",
+        "marks" : "45"
+    },
+    {
+        "name" : "aslam",
+        "marks" : "88"
+    },
+    {
+        "name" : "hassan",
+        "marks" : "97"
+    },
+    {
+        "name" : "danish",
+        "marks" : "29"
+    }
+]
+
+def grades(marks):
+    
+    marks = int(marks)
+
+    if marks < 30:
+        return "fail"
+    elif 30 <= marks < 45:
+        return "E"
+    elif 45 <= marks < 55:
+        return "D"
+    elif 55 <= marks < 65:
+        return "C"
+    elif 65 <= marks < 75:
+        return "B"
+    elif 75 <= marks <= 100:
+        return "A"
+    else:
+        return "Invalid"
+for students in data:
+    name : str = students["name"]
+    marks : int = students["marks"]    
+    grade = grades(marks)
+    
+    print(f"Dear {name} your marks are {marks} and you grade is {grade}.")
