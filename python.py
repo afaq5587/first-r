@@ -154,39 +154,39 @@
 # print("congrats")
 # ===========================================================
 
-name = input("Enter your name: ")
-physics = float(input("Enter your physics marks: "))
-math = float(input("Enter your math marks: "))
-chemistry = float(input("Enter your chemistry marks: "))
+# name = input("Enter your name: ")
+# physics = float(input("Enter your physics marks: "))
+# math = float(input("Enter your math marks: "))
+# chemistry = float(input("Enter your chemistry marks: "))
 
-students_list: list[dict] = []
+# students_list: list[dict] = []
 
-student = {
-    "name": name,
-    "math": math,
-    "physics": physics,
-    "chemistry":chemistry
-}
+# student = {
+#     "name": name,
+#     "math": math,
+#     "physics": physics,
+#     "chemistry":chemistry
+# }
 
-students_list.append(student)
-print(students_list)
-total_marks = physics + math + chemistry
-total_percentage = total_marks * 100 // 300
-total_percentage : int
-if  total_percentage > 85  and total_percentage <=100 :
-    grade =(f"A+ \n exelent work")
-elif total_percentage > 65  and total_percentage <=85:
-    grade =(f"A \n exelent work")
-elif total_percentage > 55  and total_percentage <=65:
-    grade =(f"B \n exelent work")
-elif total_percentage > 45  and total_percentage  <= 55:
-    grade =(f"C \n exelent work")
-else:
-    grade =(f"fail \n you tried your best but you can do better")
+# students_list.append(student)
+# print(students_list)
+# total_marks = physics + math + chemistry
+# total_percentage = total_marks * 100 // 300
+# total_percentage : int
+# if  total_percentage > 85  and total_percentage <=100 :
+#     grade =(f"A+ \n exelent work")
+# elif total_percentage > 65  and total_percentage <=85:
+#     grade =(f"A \n exelent work")
+# elif total_percentage > 55  and total_percentage <=65:
+#     grade =(f"B \n exelent work")
+# elif total_percentage > 45  and total_percentage  <= 55:
+#     grade =(f"C \n exelent work")
+# else:
+#     grade =(f"fail \n you tried your best but you can do better")
     
-print(f"Total marks are", total_marks) 
-print(f"Total percentage is", total_percentage)
-print(f"Your grade is {grade}")
+# print(f"Total marks are", total_marks) 
+# print(f"Total percentage is", total_percentage)
+# print(f"Your grade is {grade}")
 
 
 # ============================================================================================================
@@ -228,3 +228,33 @@ print(f"Your grade is {grade}")
 
 # print(sys.argv)
 
+# ERROR HANDLING
+# print("abcdfg")
+# print("hi")
+
+# try:
+#     print(abc)
+#     print(5/0)
+# except (ZeroDivisionError,NameError,SyntaxError):
+#     print("There is error please check your code")
+# except:
+#     print("some thing is wrong")   
+# print("chal chutti kar")
+# print("pehli fursat main nikal")
+
+# try:
+#     print(abc)
+#     print(5/0)
+# except (ZeroDivisionError,SyntaxError):
+#     print("There is error please check your code")
+# except:
+#     print("some thing is wrong")   
+# print("chal chutti kar")
+# print("pehli fursat main nikal")
+import sys
+try:
+    print(age)
+except Exception as a:
+    print(f"wrong\n{a}")
+
+print(sys.argv)

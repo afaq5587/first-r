@@ -522,46 +522,83 @@
 # get_sum : int = addition(5,8)
 # print(get_sum) 
 
-data : list = [
+# 
+
+# def factorial(n):
+#     if n < 0:
+#         return None
+#     if n < 2:
+#         return 1
+#     else:
+#         result = 1
+#         for i in range(2,n+1):
+#             result *= i
+#         return result
+# print(factorial(5))
+
+students_data = [
     {
-        "name" : "ali",
-        "marks" : "45"
+        'name': 'John Doe',
+        'marks': {
+            'Math': 85,
+            'English': 90,
+            'Science': 78
+        }
     },
     {
-        "name" : "aslam",
-        "marks" : "88"
+        'name': 'Jane Smith',
+        'marks': {
+            'Math': 75,
+            'English': 82,
+            'Science': 89
+        }
     },
     {
-        "name" : "hassan",
-        "marks" : "97"
+        'name': 'Emily Davis',
+        'marks': {
+            'Math': 93,
+            'English': 87,
+            'Science': 85
+        }
     },
     {
-        "name" : "danish",
-        "marks" : "29"
+        'name': 'Michael Brown',
+        'marks': {
+            'Math': 65,
+            'English': 70,
+            'Science': 60
+        }
+    },
+    {
+        'name': 'Chris Johnson',
+        'marks': {
+            'Math': 88,
+            'English': 85,
+            'Science': 90
+        }
     }
 ]
 
-def grades(marks):
-    
-    marks = int(marks)
-
-    if marks < 30:
+def grades(total):
+    if total < 30:
         return "fail"
-    elif 30 <= marks < 45:
+    elif 30 <= total < 45:
         return "E"
-    elif 45 <= marks < 55:
+    elif 45 <= total < 55:
         return "D"
-    elif 55 <= marks < 65:
+    elif 55 <= total < 65:
         return "C"
-    elif 65 <= marks < 75:
+    elif 65 <= total < 75:
         return "B"
-    elif 75 <= marks <= 100:
+    elif 75 <= total <= 100:
         return "A"
     else:
         return "Invalid"
-for students in data:
-    name : str = students["name"]
-    marks : int = students["marks"]    
-    grade = grades(marks)
-    
-    print(f"Dear {name} your marks are {marks} and you grade is {grade}.")
+
+for student in students_data:
+    sum = student["marks"]["Math"] + student["marks"]["English"] + student["marks"]["Science"]
+    name = student["name"]
+    total = sum * 100 / 300
+    grade = grades(total)
+   
+    print(f"Dear {name}, your total marks are {sum} and your grade is {grade}. Keep it up!")
